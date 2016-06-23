@@ -18,17 +18,17 @@ print(download)
 upload_speed = upload.split(' ')[1]
 download_speed = download.split(' ')[1]
 
-#upload_f = float(upload_speed)
-#download_f = float(download_speed)
+upload_f = float(upload_speed)
+download_f = float(download_speed)
 
-#print(upload_f < 17)
-#print(download_f < 50)
+print(upload_f < 10)
+print(download_f < 30)
 
-#if upload_f < 17:
+if upload_f < 10:
   ## POST UPLOAD TOO SLOW
-#  pass
-#if download_f < 50:
-#  pass
+  pass
+if download_f < 30:
+  pass
 
 r = requests.post(
     "https://hooks.slack.com/services/T02AQEVPE/",
